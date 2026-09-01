@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "norse";
+  src:
+    url("fonts/norse/norse-webfont.woff2") format("woff2"),
+    url("fonts/norse/norse-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "norse";
+  src:
+    url("fonts/norse/norsebold-webfont.woff2") format("woff2"),
+    url("fonts/norse/norsebold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red !important; */
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  font-family: sans-serif;
+  min-height: 100%;
+}
+
+.left {
+  flex: 1;
+  height: 100vh;
+}
+
+.right {
+  flex: 2;
+  background-color: #eeeeee;
+  height: 100vh;
+}
+
+.bg-image {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+div.credit {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+}
+
+p.credit {
+  color: #e0e0e0;
+
+  & a {
+    color: #e0e0e0;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+h1.logo {
+  font-family: "norse";
+  font-weight: bold;
+  color: white;
+  font-size: 6rem;
+}
+
+.logo-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: fit-content;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 20vh;
+  width: 100%;
+}
+
+.logo-bg img {
+  height: 8rem;
+  width: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  font-size: 24px;
+  flex-wrap: wrap;
+}
+
+.form {
+  background-color: white;
+  padding: 0 0 30px 60px;
+  color: #262d3a;
+  box-shadow: 0 5px 5px #c6c6c6;
+}
+
+.form-title {
+  font-size: 24px;
+  padding: 15px 0 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #414855;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  padding: 8px;
+  display: block;
+  width: 300px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 2px 2px 2px #c6c6c6;
+}
+
+.form-input {
+  display: flex;
+  gap: 5vw;
+}
+
+button {
+  background-color: #596D48;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #616161;
+  font-size: 18px;
+  padding: 12px;
+  width: 250px;
+  color: white;
+  margin: 40px 0 40px 60px;
+}
+
+button:hover {
+  background-color: #76905e;
+}
+
+p > a {
+  color: #596D48;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.top-text {
+  font-weight: 600;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.item p {
+  margin-left: 60px;
+}
+
+form + p {
+  font-size: 18px;
+}
